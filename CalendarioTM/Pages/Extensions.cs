@@ -122,6 +122,7 @@ namespace CalendarioTM.Pages
 
             double value = (gregorian.Year - 337) / 78;
             int bloom = (int)Math.Round(value, MidpointRounding.AwayFromZero);
+            bloom++; // Correzione fioritura secondo gruppo BG
             if (gregorian >= _abnormalBloom)
             {
                 bloom++;
