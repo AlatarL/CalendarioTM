@@ -126,6 +126,7 @@ namespace CalendarioTM.Pages
             // ↓↓ local functions ↓↓ //
             int getYear()
             {
+                bloom--; // Correzione fioritura secondo gruppo BG
                 if (bloom >= 22)
                 { return bloom * 78 + part + 297; }
                 else
